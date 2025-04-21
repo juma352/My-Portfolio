@@ -819,8 +819,8 @@ nav {
 
 /* Footer */
 footer {
-    background: var(--dark-color);
-    color: black;
+    background: var(--card-bg);
+    color: var(--text-color);
     text-align: center;
     padding: 2rem 0;
 }
