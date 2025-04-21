@@ -1,484 +1,396 @@
-<!-- Portfolio Design -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character encoding for the document -->
     <meta charset="UTF-8">
-    
-    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Leon Juma, a Full-Stack Developer specializing in Web & Mobile Development.">
-    
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Link to Font Awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    
-    <!-- Document title -->
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Leon Juma | Full-Stack Developer</title>
 </head>
 <body>
-    <!-- Header section -->
     <header>
-        <!-- Navigation menu -->
         <nav>
-            <!-- Logo section -->
             <div class="logo">
-                <h1>Portfolio</h1>
+                <h1>LJ</h1>
             </div>
             
-            <!-- Menu items -->
             <div class="menu">
                 <ul>
-                    <!-- Home link -->
                     <li><a href="#home">Home</a></li>
-                    
-                    <!-- About link -->
-                    <li><a href="#about">About</a></li>
-                    
-                    <!-- Interests link -->
-
                     <li><a href="#interests">Interests</a></li>
-                    
-                    <!-- Education link -->
-                   
                     <li><a href="#education">Education</a></li>
-                    <!-- Skills link -->
                     <li><a href="#skills">Skills</a></li>
-                    
-                    <!-- Project link -->
-                    
                     <li><a href="#projects">Projects</a></li>
-                    <!-- Contact link -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!-- Hamburger menu for mobile devices -->
-    <div class="hamburger-menu">
-        <i class="fas fa-bars"></i>
-    </div>
+            
+            <div class="dark-mode-toggle" title="Toggle Dark Mode" role="button" tabindex="0" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </div>
+            
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
     
-    <!-- Home section -->
-    <section class="container" id="home">
-        <!-- Main content -->
-        <div class="main">
-          <!-- Detail section -->
-          <div class="detail">
-            <h3>Hi, It's Me</h3>
-            <h1>I'm <span style="color:#f9532d;">Leon</span></h1>
-            <p>Building Digital Experiences That Matter</p>
-            <p class="tagline">Full-Stack Developer | Web & Mobile Enthusiast</p>
-          </div>
-          <!-- Image section -->
-          <div class="img-sec">
-            <!-- Images container -->
-            <div class="images">
-              <!-- Profile image -->
-              <img src="./Assets/20240316_153850 (1).jpg" alt="Leon" class="img-w">
-            </div>
-          </div>
-          <!-- Call-to-Action (CTA) -->
-          <div class="cta">
-            <a href="#projects" class="btn">Explore My Portfolio <i class="fas fa-arrow-right"></i></a>
-            <a href="./Assets/My Resume (1).pdf" class="btn download-btn" download="Leon_CV.pdf">
-              <i class="fas fa-download"></i> Download My CV
-            </a>
-          </div>
-        </div>
-      </section>
-    
-    <!-- About section -->
-    <section>
-        <!-- About container -->
-        <div class="about" id="about">
-            <!-- About section content -->
-            <div class="about-sec">
-                <h1>About <span>Me</span></h1>
-<p>Hello! I'm a passionate Full-Stack Developer specializing in Web & Mobile Development. With a strong foundation in modern technologies, I craft high-performance, scalable, and user-friendly applications tailored to meet business needs. I enjoy collaborating with teams to create innovative solutions and continuously learning new technologies to enhance my skills.</p>
-                
-                <!-- About image -->
-                <div class="about-img">
-                    <img src="./Assets/pexels-polina-tankilevitch-5585810.jpg" alt="" class="img-w" width="300px" height="300px">
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h3 class="greeting">Hello, I'm</h3>
+                <h1 class="name">Leon <span>Juma</span></h1>
+                <p class="headline">Full-Stack Developer</p>
+                <p class="tagline">Creating digital solutions that make an impact</p>
+                <p class="about-intro">
+                    I specialize in building responsive, accessible web applications with modern technologies. 
+                    Passionate about clean code and intuitive user experiences.
+                </p>
+                <div class="cta">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="./Assets/My Resume (1).pdf" class="btn secondary-btn" download="Leon_Juma_CV.pdf">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img src="./Assets/IMG-20240225-WA0094.jpg" alt="Leon Juma" class="profile-img">
             </div>
         </div>
     </section>
     
-    <!-- Interests section -->
     <section class="interests" id="interests">
-        <!-- Container -->
         <div class="container">
-            <!-- Section title -->
             <h2 class="section-title">My <span>Interests</span></h2>
-            <p class="section-subtitle">What excites me about technology</p>
+            <p class="section-subtitle">Areas that excite me in technology</p>
             
-            <!-- Interests grid -->
             <div class="interests-grid">
-                <!-- Interest 1: Web Development -->
                 <div class="interest-card">
                     <div class="interest-icon">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Web Development</h3>
-                    <p>Creating responsive, accessible websites that solve real problems. I love experimenting with new frameworks and pushing CSS to its limits.</p>
+                    <p>Creating responsive, accessible websites that solve real problems with modern frameworks and best practices.</p>
                 </div>
                 
-                <!-- Interest 2: AI & Machine Learning -->
                 <div class="interest-card">
                     <div class="interest-icon">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Fascinated by how AI can transform industries. Currently exploring TensorFlow.js for browser-based ML applications.</p>
+                    <h3>AI & ML</h3>
+                    <p>Exploring how artificial intelligence can enhance user experiences and solve complex problems.</p>
                 </div>
                 
-                <!-- Interest 3: Mobile Development -->
                 <div class="interest-card">
                     <div class="interest-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Mobile Development</h3>
-                    <p>Building cross-platform apps with Flutter. Passionate about creating seamless mobile experiences.</p>
+                    <h3>Mobile Apps</h3>
+                    <p>Building cross-platform applications that deliver seamless experiences on any device.</p>
                 </div>
                 
-                <!-- Interest 4: Cloud Architecture -->
                 <div class="interest-card">
                     <div class="interest-icon">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h3>Cloud Architecture</h3>
-                    <p>Designing scalable systems on AWS. Interested in serverless technologies and microservices.</p>
+                    <h3>Cloud Solutions</h3>
+                    <p>Designing scalable, secure cloud architectures to power modern applications.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Education section -->
     <section class="education" id="education">
-        <!-- Container -->
         <div class="container">
-            <!-- Section title -->
             <h2 class="section-title">My <span>Education</span></h2>
-            <p class="section-subtitle">My academic qualifications</p>
+            <p class="section-subtitle">My academic journey</p>
             
-            <!-- Education grid -->
             <div class="education-grid">
-                <!-- Certificate in IT -->
                 <div class="education-card">
                     <div class="education-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <h3>Certificate in IT</h3>
-                    <p>Kiambu National Polytechnic, 2018</p>
-                    <p>Specialized in the foundation of Information Communication technology</p>
-                    
+                    <p class="institution">Kiambu National Polytechnic</p>
+                    <p class="year">2018</p>
+                    <p>Gained foundational knowledge in information technology and computer systems.</p>
                 </div>
                 
-                <!-- Diploma in IT -->
                 <div class="education-card">
                     <div class="education-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Diploma in IT</h3>
-                    <p>Kiambu National Polytechnic, 2024</p>
-                    <p>Gained a deeper understanding of computer systems, networking, and software development</p>
+                    <p class="institution">Kiambu National Polytechnic</p>
+                    <p class="year">2024</p>
+                    <p>Specialized in advanced IT concepts, software development, and system administration.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Skills section -->
     <section class="skills" id="skills">
-        <!-- Container -->
         <div class="container">
-            <!-- Section title -->
             <h2 class="section-title">My <span>Skills</span></h2>
             <p class="section-subtitle">Technologies I work with</p>
             
-            <!-- Skills container -->
             <div class="skills-container">
-                <!-- Programming Languages -->
                 <div class="skills-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> Languages</h3>
                     <div class="skills-list">
-                        <!-- JavaScript -->
                         <div class="skill-item" data-percent="90">
                             <div class="skill-info">
                                 <span>JavaScript</span>
                                 <span class="skill-percent">90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                         
-                        <!-- Python -->
                         <div class="skill-item" data-percent="85">
                             <div class="skill-info">
                                 <span>Python</span>
                                 <span class="skill-percent">85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                         
-                        <!-- Java -->
                         <div class="skill-item" data-percent="80">
                             <div class="skill-info">
                                 <span>Java</span>
                                 <span class="skill-percent">80%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Frontend Development -->
                 <div class="skills-category">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
                     <div class="skills-list">
-                        <!-- React -->
                         <div class="skill-item" data-percent="95">
                             <div class="skill-info">
                                 <span>React</span>
                                 <span class="skill-percent">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                         
-                        <!-- HTML/CSS -->
                         <div class="skill-item" data-percent="90">
                             <div class="skill-info">
                                 <span>HTML/CSS</span>
                                 <span class="skill-percent">90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                         
-                        <!-- Vue.js -->
                         <div class="skill-item" data-percent="85">
                             <div class="skill-info">
                                 <span>Vue.js</span>
                                 <span class="skill-percent">85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Backend Development -->
                 <div class="skills-category">
-                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <h3><i class="fas fa-server"></i> Backend</h3>
                     <div class="skills-list">
-                        <!-- Node.js -->
                         <div class="skill-item" data-percent="88">
                             <div class="skill-info">
                                 <span>Node.js</span>
                                 <span class="skill-percent">88%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                         
-                        <!-- PHP -->
                         <div class="skill-item" data-percent="82">
                             <div class="skill-info">
                                 <span>PHP</span>
                                 <span class="skill-percent">82%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                         
-                        <!-- Laravel -->
                         <div class="skill-item" data-percent="75">
                             <div class="skill-info">
                                 <span>Laravel</span>
                                 <span class="skill-percent">75%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                                <div class="skill-progress"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Other Skills -->
                 <div class="skills-category">
-                    <h3><i class="fas fa-tools"></i> Other Skills</h3>
+                    <h3><i class="fas fa-tools"></i> Tools & More</h3>
                     <div class="skills-tags">
-                        <!-- Git -->
                         <span class="skill-tag">Git</span>
-                        
-                        <!-- Docker -->
                         <span class="skill-tag">Docker</span>
-                        
-                        <!-- AWS -->
                         <span class="skill-tag">AWS</span>
-                        
-                        <!-- MongoDB -->
                         <span class="skill-tag">MongoDB</span>
-                        
-                        <!-- PostgreSQL -->
                         <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Projects section -->
     <section class="projects" id="projects">
-        <!-- Container -->
         <div class="container">
-            <!-- Section title -->
             <h2 class="section-title">My <span>Projects</span></h2>
+            <p class="section-subtitle">Selected work I've created</p>
             
-            <!-- Section subtitle -->
-            <p class="section-subtitle">Here are some of the projects I've worked on:</p>
-            
-            <!-- Project list -->
             <div class="project-list">
-                <!-- Project 1: Errands By Leeky -->
                 <div class="project-item">
+                    <div class="project-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
                     <h3>Errands By Leeky</h3>
-                    <p>A web application that helps users manage their daily errands efficiently.</p>
-                    <a href="https://github.com/juma352/Errands-by-leeky.git" target="_blank">View on GitHub</a>
+                    <p>A task management application that helps users organize and track their daily errands.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/juma352/Errands-by-leeky.git" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 
-                <!-- Project 2: Book Review -->
                 <div class="project-item">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
                     <h3>Book Review</h3>
-                    <p>A platform for users to share and read reviews of their favorite books.</p>
-                    <a href="https://github.com/juma352/book-review.git" target="_blank">View on GitHub</a>
+                    <p>A platform for book enthusiasts to share and discover reviews of their favorite books.</p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="https://github.com/juma352/book-review.git" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 
-                <!-- Project 3: Task-List -->
                 <div class="project-item">
-                    <h3>Task-List</h3>
-                    <p>A simple task management tool that allows users to create, edit, and delete tasks.</p>
-                    <a href="https://github.com/juma352/task-list.git" target="_blank">View on GitHub</a>
+                    <div class="project-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>Task List</h3>
+                    <p>A productivity application for managing tasks with drag-and-drop functionality.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <a href="https://github.com/juma352/task-list.git" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Contact section -->
     <section class="contact" id="contact">
-        <!-- Container -->
         <div class="container">
-            <!-- Section title -->
-            <h2 class="section-title">Contact <span>Me</span></h2>
-            <p class="section-subtitle">Get in touch for opportunities or just to say hi!</p>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Have a project in mind or want to connect?</p>
             
-            <!-- Contact container -->
             <div class="contact-container">
-                <!-- Contact info -->
                 <div class="contact-info">
-                    <!-- Email -->
                     <div class="contact-card">
                         <i class="fas fa-envelope"></i>
                         <h3>Email</h3>
                         <p>jumaleon58@gmail.com</p>
-                        <a href="mailto:jumaleon58@gmail.com">Send a message</a>
+                        <a href="mailto:jumaleon58@gmail.com">Send Message</a>
                     </div>
                     
-                    <!-- Phone -->
                     <div class="contact-card">
                         <i class="fas fa-phone-alt"></i>
                         <h3>Phone</h3>
                         <p>+254 723 708 814</p>
-                        <a href="tel:+254723708814">Call me</a>
+                        <a href="tel:+254723708814">Call Me</a>
                     </div>
                     
-                    <!-- Location -->
                     <div class="contact-card">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>Location</h3>
                         <p>Nairobi, Kenya</p>
-                        <a href="https://maps.google.com" target="_blank">View on map</a>
+                        <a href="https://maps.google.com/maps?q=Nairobi" target="_blank">View Map</a>
                     </div>
                     
-                    <!-- Social links -->
                     <div class="social-links">
-                        <!-- GitHub -->
-                        <a href="https://github.com/juma352" target="_blank"><i class="fab fa-github"></i></a>
-                        
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/leon-juma-927a58212/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        
-                        <!-- Twitter -->
-                        <a href="https://x.com/jumaleon58?t=LfSVLFUF1YvW6m3bWrEM4w&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-                        
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/jumaleon/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/juma352" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/leon-juma-927a58212/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/jumaleon58" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jumaleon/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 
-                <!-- Contact form -->
                 <form class="contact-form" id="contactForm">
-                    <!-- Name input -->
                     <div class="form-group">
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder=" " required>
                         <label for="name">Your Name</label>
                         <span class="error-message" id="name-error"></span>
                     </div>
                     
-                    <!-- Email input -->
                     <div class="form-group">
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder=" " required>
                         <label for="email">Your Email</label>
                         <span class="error-message" id="email-error"></span>
                     </div>
                     
-                    <!-- Subject input -->
                     <div class="form-group">
-                        <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
                         <label for="subject">Subject</label>
                         <span class="error-message" id="subject-error"></span>
                     </div>
                     
-                    <!-- Message input -->
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
                         <label for="message">Your Message</label>
                         <span class="error-message" id="message-error"></span>
                     </div>
                     
-                    <!-- Submit button -->
                     <button type="submit" class="submit-btn">
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                     
-                    <!-- Form status -->
                     <div class="form-status" id="formStatus"></div>
                 </form>
             </div>
         </div>
     </section>
     
-    <!-- Footer section -->
     <footer>
-        <!-- Container -->
         <div class="container">
-            <!-- Copyright text -->
-            <p>&copy; 2025 Leon. All rights reserved.</p>
+            <p>&copy; <span id="current-year">2025</span> Leon Juma. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
